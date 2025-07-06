@@ -14,7 +14,6 @@ import Signup from "./pages/Signup";
 import Account from "./pages/Account";
 import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
-import "./app.css";
 
 export default function App() {
   return (

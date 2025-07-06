@@ -21,9 +21,9 @@ export default function Welcome() {
         </Link>
       </div>
       <div className="absolute bottom-0 left-0 w-full flex justify-center gap-8 pb-8 animate-fade-in-up">
-        <img src="/public/images/headphones.jpg" alt="Headphones" className="w-32 h-32 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition" />
-        <img src="/public/images/smartwatch.jpg" alt="Smart Watch" className="w-32 h-32 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition" />
-        <img src="/public/images/shoes.jpg" alt="Shoes" className="w-32 h-32 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition" />
+        <img src="/images/headphones.jpg" alt="Headphones" className="w-32 h-32 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition" />
+        <img src="/images/smartwatch.jpg" alt="Smart Watch" className="w-32 h-32 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition" />
+        <img src="/images/shoes.jpg" alt="Shoes" className="w-32 h-32 object-cover rounded-2xl shadow-lg border-4 border-white transform hover:scale-105 transition" />
       </div>
       <ReviewSection />
     </div>
