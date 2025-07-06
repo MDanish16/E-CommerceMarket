@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 99.99,
+    "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life.",
+    "image": "/images/headphones.jpg",
+    "rating": 4.7,
+    "category": "Electronics",
+    "availability": true
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 149.99,
+    "description": "Stylish smart watch with fitness tracking, heart rate monitor, and customizable faces.",
+    "image": "/images/smartwatch.jpg",
+    "rating": 4.5,
+    "category": "Wearables",
+    "availability": true
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 59.99,
+    "description": "Portable Bluetooth speaker with deep bass, waterproof design, and 12-hour playtime.",
+    "image": "/images/speaker.jpg",
+    "rating": 4.3,
+    "category": "Electronics",
+    "availability": false
+  },
+  {
+    "id": 4,
+    "name": "Running Shoes",
+    "price": 89.99,
+    "description": "Lightweight running shoes with breathable mesh and cushioned sole for comfort.",
+    "image": "/images/shoes.jpg",
+    "rating": 4.8,
+    "category": "Footwear",
+    "availability": true
+  },
+  {
+    "id": 5,
+    "name": "Backpack",
+    "price": 39.99,
+    "description": "Durable backpack with multiple compartments, water-resistant material, and USB charging port.",
+    "image": "/images/backpack.jpg",
+    "rating": 4.6,
+    "category": "Accessories",
+    "availability": true
+  }
+] 
