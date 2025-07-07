@@ -47,6 +47,16 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
+## 🌓 ScreenShots
+
+- welcome.png
+- welcome2.png
+- shop.png
+- shop2.png
+- signup.png
+  
+---
+
 ## 🗂️ Project Structure
 
 ```
