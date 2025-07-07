@@ -82,7 +82,6 @@ npm run build
 - **Add products:** Edit `app/data/products.json`.
 - **Change theme colors:** Edit `tailwind.config.js` and `app/app.css`.
 - **Add new pages/components:** Use the modular structure in `app/`.
-![Uploading image.png…]()
 
 ---
 
