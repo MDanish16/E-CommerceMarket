@@ -1,87 +1,99 @@
-# Welcome to React Router!
+# 🛒 E-Commerce Website
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+A modern, fully responsive e-commerce web application built with **React**, **Vite**, and **Tailwind CSS**.  
+Features a beautiful UI, robust theme management (light/dark/system), shopping cart, wishlist, authentication context, and more.
 
 ---
 
-Built with ❤️ using React Router.
+## ✨ Features
+
+- **Modern UI**: Glassmorphism, gradients, smooth transitions, and responsive design.
+- **Theme Management**: Light, dark, and system themes with persistent user preference.
+- **Product Catalog**: Browse, search, filter, and sort products.
+- **Shopping Cart**: Add, remove, and manage cart items.
+- **Wishlist**: Save favorite products for later.
+- **Authentication Context**: Easily extendable for real user auth.
+- **Profile & Account Pages**: User profile management.
+- **404 Not Found**: Friendly error page.
+- **Fully Responsive**: Works on all devices.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```sh
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Install dependencies
+```sh
+npm install
+```
+
+### 3. Start the development server
+```sh
+npm run dev
+```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🌓 Theme Management
+
+- Toggle between **Light**, **Dark**, and **System** themes using the button in the navbar.
+- Theme preference is saved and syncs with your OS if set to "System".
+
+---
+
+## 🗂️ Project Structure
+
+```
+app/
+  components/      # Reusable UI components (Navbar, ProductCard, etc.)
+  context/         # React Contexts (Auth, Cart, Wishlist, Theme)
+  data/            # Static product data (JSON)
+  pages/           # Main pages (Home, Shop, Cart, etc.)
+  routes/          # Route definitions
+  app.css          # Global styles (Tailwind + custom)
+  App.tsx          # Main app component
+  main.tsx         # Entry point
+public/
+  images/          # Product images
+index.html         # Main HTML file
+tailwind.config.js # Tailwind CSS config
+postcss.config.js  # PostCSS config
+vite.config.mjs    # Vite config
+```
+
+---
+
+## 📦 Build for Production
+
+```sh
+npm run build
+```
+
+---
+
+## 📝 Customization
+
+- **Add products:** Edit `app/data/products.json`.
+- **Change theme colors:** Edit `tailwind.config.js` and `app/app.css`.
+- **Add new pages/components:** Use the modular structure in `app/`.
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+---
+
+## 📄 License
+
+MIT
