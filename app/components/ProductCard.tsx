@@ -27,7 +27,7 @@ export default function ProductCard({
   const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
   const inWishlist = isInWishlist(id);
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl group relative">
+    <div className="glass rounded-2xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl group relative border border-white/30 dark:border-gray-800 backdrop-blur-lg">
       <button
         className={`absolute top-3 right-3 z-10 p-2 rounded-full bg-white/80 dark:bg-gray-800/80 shadow hover:scale-110 transition-transform ${inWishlist ? 'text-pink-500' : 'text-gray-400'}`}
         onClick={(e) => {
@@ -49,7 +49,7 @@ export default function ProductCard({
         <img
           src={image}
           alt={name}
-          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110 rounded-t-2xl"
         />
         {!availability && (
           <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
@@ -57,17 +57,17 @@ export default function ProductCard({
           </div>
         )}
       </div>
-      <div className="p-4 flex flex-col gap-2">
-        <h2 className="font-bold text-xl text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+      <div className="p-5 flex flex-col gap-2">
+        <h2 className="font-extrabold text-xl text-gray-800 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 drop-shadow">
           {name}
         </h2>
-        <p className="text-gray-500 text-sm line-clamp-2">{description}</p>
+        <p className="text-gray-500 dark:text-gray-300 text-sm line-clamp-2">{description}</p>
         <div className="flex items-center gap-2 mt-2">
           <span className="text-yellow-400 text-lg">{'★'.repeat(Math.round(rating))}</span>
-          <span className="text-gray-400 text-sm">({rating})</span>
+          <span className="text-gray-400 dark:text-gray-300 text-sm">({rating})</span>
         </div>
         <div className="flex items-center justify-between mt-2">
-          <span className="text-2xl font-bold text-blue-600">${price.toFixed(2)}</span>
+          <span className="text-2xl font-bold text-blue-600 dark:text-blue-400 drop-shadow">${price.toFixed(2)}</span>
           <button
             className="px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg shadow hover:from-indigo-500 hover:to-blue-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50"
             onClick={() => addToCart({ id, name, price, image, availability })}

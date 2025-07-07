@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global background gradient for light and dark */
+html {
+  @apply min-h-full;
+  background: linear-gradient(135deg, #f0f4ff 0%, #f9e6ff 100%);
+  transition: background 0.5s;
+}
+html.dark {
+  background: linear-gradient(135deg, #181c2f 0%, #2d223a 100%);
+}
+
+body {
+  @apply font-sans antialiased min-h-screen text-gray-900 dark:text-gray-100 bg-transparent transition-colors duration-500;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+html.dark .glass {
+  background: rgba(24,28,47,0.7);
+  box-shadow: 0 8px 32px 0 rgba(24, 28, 47, 0.28);
+  border: 1px solid rgba(40,40,60,0.18);
+}
+
+/* Smooth theme transitions */
+* {
+  transition: background 0.4s, color 0.4s, border 0.4s, box-shadow 0.4s;
+}
+
+/* Modern headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-extrabold tracking-tight;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e0e7ff;
+  border-radius: 8px;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #23263a;
+}
+
 /* Custom styles and animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -35,13 +86,4 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-html,
-body {
-  @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-500;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
 }

@@ -66,12 +66,12 @@ export default function Shop() {
           <input
             type="text"
             placeholder="Search products..."
-            className="w-full md:w-1/3 px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 transition-all shadow-sm"
+            className="w-full md:w-1/3 px-5 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 glass shadow focus:ring-2 focus:ring-blue-400 focus:border-blue-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-all text-lg placeholder-gray-400 dark:placeholder-gray-500"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
           <select
-            className="px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 transition-all shadow-sm"
+            className="px-5 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 glass shadow focus:ring-2 focus:ring-blue-400 focus:border-blue-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-all text-lg"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
@@ -80,7 +80,7 @@ export default function Shop() {
             ))}
           </select>
           <select
-            className="px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 transition-all shadow-sm"
+            className="px-5 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-800/70 glass shadow focus:ring-2 focus:ring-blue-400 focus:border-blue-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-all text-lg"
             value={sort}
             onChange={(e) => setSort(e.target.value)}
           >
